@@ -21,15 +21,10 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Expanded(
-              flex: 4,
+              flex: 20,
               child: Container(
                 color: Colors.green,
                 child: const ListContact(),
-              )),
-          Expanded(
-              flex: 10,
-              child: Container(
-                color: Colors.red,
               )),
         ],
       ),

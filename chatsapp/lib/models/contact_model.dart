@@ -1,7 +1,9 @@
+import 'package:chatsapp/models/chats_model.dart';
+
 class ContactModel {
   final String id;
   final String name;
-  final String? lastedMess;
+  final List<ChatModel>? lastedMess;
   final String? imgPath;
   final bool? isOnl;
 

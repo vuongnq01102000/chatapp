@@ -7,15 +7,20 @@ class TemplateContact extends StatelessWidget {
     required this.name,
     required this.lastedMes,
     required this.imgPath,
+    this.func,
+    this.isSeen = true,
     this.isOnl = false,
   }) : super(key: key);
   final String name;
   final String lastedMes;
   final String imgPath;
+  final Function? func;
+  final bool? isSeen;
   final bool? isOnl;
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      onTap: () => func!(),
       leading: CircleAvatarDotGreen(
         imgPath: imgPath,
         isOnl: isOnl!,
