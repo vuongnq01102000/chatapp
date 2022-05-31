@@ -7,9 +7,6 @@ import 'package:chatsapp/widgets/avatar_dot_green.dart';
 import 'package:chatsapp/widgets/template_contac.dart';
 import 'package:flutter/material.dart';
 
-final StreamController<List<ContactModel>> _chatMessagesStreamController =
-    StreamController<List<ContactModel>>.broadcast();
-
 class ListContact extends StatefulWidget {
   const ListContact({Key? key}) : super(key: key);
 
@@ -41,7 +38,6 @@ class _ListContactState extends State<ListContact> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
   }
 
